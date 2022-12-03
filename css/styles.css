@@ -792,6 +792,17 @@ justify-content: space-around;
   font-size: 12px;
 }
 
+.visually-hidden {	
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+	}
+
 .lable-text {
   display: flex;
   justify-content: center;
@@ -812,6 +823,7 @@ justify-content: space-around;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .modal-check:checked + .lable-text span {
   background-color: var(--accent-color);
